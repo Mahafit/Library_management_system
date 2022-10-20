@@ -13,11 +13,12 @@ class CategoryTitle extends StatelessWidget {
         children: [
           Text(
             title,
-            style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            style: const TextStyle(
+                fontSize: 18, fontWeight: FontWeight.bold, color: Colors.black),
           ),
           const Text(
             'See more',
-            style: TextStyle(color: Colors.grey),
+            style: TextStyle(color: Colors.black),
           )
         ],
       ),

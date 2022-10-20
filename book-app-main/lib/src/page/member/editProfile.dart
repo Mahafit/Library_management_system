@@ -30,9 +30,9 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: Color(0xFFF4CAFF),
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Color(0xFFFB7CFF),
+        backgroundColor: Color(0xFFA49CF1),
         automaticallyImplyLeading: false,
         leading: InkWell(
           onTap: () async {
@@ -57,326 +57,331 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
         elevation: 0,
       ),
       body: SafeArea(
-        child: Column(
-          mainAxisSize: MainAxisSize.max,
-          children: [
-            //height: 100,
-            //เว้นวรรค
-            Padding(
-              padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
-              child: Container(
-                width: 100,
-                height: 100,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  image: DecorationImage(
-                    fit: BoxFit.cover,
-                    image: NetworkImage(
-                      'https://picsum.photos/seed/100/600',
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisSize: MainAxisSize.max,
+            children: [
+              //height: 100,
+              //เว้นวรรค
+              Padding(
+                padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
+                child: Container(
+                  width: 100,
+                  height: 100,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    image: DecorationImage(
+                      fit: BoxFit.cover,
+                      image: Image.asset(
+                        'assets/images/book1.jpg',
+                      ).image,
                     ),
                   ),
                 ),
               ),
-            ),
-            Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 16),
-              child: Row(
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 16),
+                child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    //buttonwidget -ฬ
+                    TextButton(
+                      onPressed: () async {
+                        print('button pressed ...');
+                      },
+                      child: Text(
+                        'Change Photo',
+                        style: TextStyle(
+                          color: Color(0xFFFB7CFF),
+                          fontSize: 16,
+                          fontFamily: 'Poppins',
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Align(
+                alignment: AlignmentDirectional(-0.85, 0),
+                child: Text(
+                  'First Name',
+                  textAlign: TextAlign.start,
+                  style: TextStyle(
+                    color: Color(0xFF000000),
+                    fontSize: 16,
+                    fontFamily: 'Poppins',
+                  ),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(20, 0, 20, 16),
+                child: TextFormField(
+                  controller: textController1,
+                  obscureText: false,
+                  decoration: InputDecoration(
+                    labelStyle: TextStyle(
+                      color: Color(0xFF000000),
+                      fontSize: 16,
+                      fontFamily: 'Poppins',
+                    ),
+                    hintText: 'Your First name',
+                    hintStyle: TextStyle(
+                      color: Color(0xFF000000),
+                      fontSize: 16,
+                      fontFamily: 'Poppins',
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Color(0xFF000000),
+                        width: 2,
+                      ),
+                      borderRadius: BorderRadius.circular(3),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Color(0xFF000000),
+                        width: 2,
+                      ),
+                      borderRadius: BorderRadius.circular(3),
+                    ),
+                    errorBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Color(0x00000000),
+                        width: 2,
+                      ),
+                      borderRadius: BorderRadius.circular(3),
+                    ),
+                    focusedErrorBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Color(0x00000000),
+                        width: 2,
+                      ),
+                      borderRadius: BorderRadius.circular(3),
+                    ),
+                    filled: true,
+                    fillColor: Color(0xFFDBE2E7),
+                    contentPadding:
+                        EdgeInsetsDirectional.fromSTEB(20, 24, 0, 24),
+                  ),
+                  style: TextStyle(
+                    color: Color(0xFF000000),
+                    fontSize: 16,
+                    fontFamily: 'Poppins',
+                  ),
+                ),
+              ),
+              Align(
+                alignment: AlignmentDirectional(-0.85, 0),
+                child: Text(
+                  'Last name',
+                  style: TextStyle(
+                    color: Color(0xFF000000),
+                    fontSize: 16,
+                    fontFamily: 'Poppins',
+                  ),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(20, 0, 20, 16),
+                child: TextFormField(
+                  controller: textController2,
+                  obscureText: false,
+                  decoration: InputDecoration(
+                    labelStyle: TextStyle(
+                      color: Color(0xFF000000),
+                      fontSize: 16,
+                      fontFamily: 'Poppins',
+                    ),
+                    hintText: 'Your last name',
+                    hintStyle: TextStyle(
+                      color: Color(0xFF000000),
+                      fontSize: 16,
+                      fontFamily: 'Poppins',
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Color(0xFF000000),
+                        width: 2,
+                      ),
+                      borderRadius: BorderRadius.circular(3),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Color(0xFF000000),
+                        width: 2,
+                      ),
+                      borderRadius: BorderRadius.circular(3),
+                    ),
+                    errorBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Color(0x00000000),
+                        width: 2,
+                      ),
+                      borderRadius: BorderRadius.circular(3),
+                    ),
+                    focusedErrorBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Color(0x00000000),
+                        width: 2,
+                      ),
+                      borderRadius: BorderRadius.circular(3),
+                    ),
+                    filled: true,
+                    fillColor: Color(0xFFDBE2E7),
+                    contentPadding:
+                        EdgeInsetsDirectional.fromSTEB(20, 24, 0, 24),
+                  ),
+                  style: TextStyle(
+                    color: Color(0xFF000000),
+                    fontSize: 16,
+                    fontFamily: 'Poppins',
+                  ),
+                ),
+              ),
+              Align(
+                alignment: AlignmentDirectional(-0.85, 0),
+                child: Text(
+                  'phone number',
+                  style: TextStyle(
+                    color: Color(0xFF000000),
+                    fontSize: 16,
+                    fontFamily: 'Poppins',
+                  ),
+                ),
+              ),
+              Row(
                 mainAxisSize: MainAxisSize.max,
-                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  //buttonwidget -ฬ
-                  TextButton(
-                    onPressed: () async {
-                      print('button pressed ...');
-                    },
-                    child: Text(
-                      'Change Photo',
-                      style: TextStyle(
-                        color: Color(0xFFFB7CFF),
-                        fontSize: 16,
-                        fontFamily: 'Poppins',
+                  Expanded(
+                    child: Align(
+                      alignment: AlignmentDirectional(0, 0),
+                      child: Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(20, 0, 20, 0),
+                        child: TextFormField(
+                          controller: textController3,
+                          obscureText: false,
+                          decoration: InputDecoration(
+                            labelText: 'Lastname',
+                            labelStyle: TextStyle(
+                              color: Color(0xFF000000),
+                              fontSize: 16,
+                              fontFamily: 'Poppins',
+                            ),
+                            hintText: 'Your full name...',
+                            hintStyle: TextStyle(
+                              color: Color(0xFF000000),
+                              fontSize: 16,
+                              fontFamily: 'Poppins',
+                            ),
+                            enabledBorder: OutlineInputBorder(
+                              borderSide: BorderSide(
+                                color: Color(0xFF0082FF),
+                                width: 2,
+                              ),
+                              borderRadius: BorderRadius.circular(3),
+                            ),
+                            focusedBorder: OutlineInputBorder(
+                              borderSide: BorderSide(
+                                color: Color(0xFF0082FF),
+                                width: 2,
+                              ),
+                              borderRadius: BorderRadius.circular(3),
+                            ),
+                            errorBorder: OutlineInputBorder(
+                              borderSide: BorderSide(
+                                color: Color(0x00000000),
+                                width: 2,
+                              ),
+                              borderRadius: BorderRadius.circular(3),
+                            ),
+                            focusedErrorBorder: OutlineInputBorder(
+                              borderSide: BorderSide(
+                                color: Color(0x00000000),
+                                width: 2,
+                              ),
+                              borderRadius: BorderRadius.circular(3),
+                            ),
+                            filled: true,
+                            fillColor: Color(0xFFDBE2E7)
+                                .withOpacity(0.5000000000000001),
+                            contentPadding:
+                                EdgeInsetsDirectional.fromSTEB(20, 24, 0, 24),
+                          ),
+                          style: TextStyle(
+                            color: Color(0xFF000000),
+                            fontSize: 16,
+                            fontFamily: 'Poppins',
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Align(
+                    alignment: AlignmentDirectional(0, 0.05),
+                    child: Padding(
+                      padding: EdgeInsetsDirectional.fromSTEB(0, 0, 10, 0),
+                      child: TextButton(
+                        onPressed: () async {},
+                        child: Text(
+                          'Verify',
+                          style: TextStyle(
+                            color: Color(0xFF0082FF),
+                            fontSize: 16,
+                            fontFamily: 'Poppins',
+                          ),
+                        ),
+                        style: TextButton.styleFrom(
+                          backgroundColor: Color(0x00000000),
+                          shape: RoundedRectangleBorder(
+                            side: BorderSide(
+                              color: Color(0xFF0082FF),
+                              width: 2,
+                              style: BorderStyle.solid,
+                            ),
+                            borderRadius: BorderRadius.circular(3),
+                          ),
+                          padding:
+                              EdgeInsetsDirectional.fromSTEB(16, 12, 16, 12),
+                        ),
                       ),
                     ),
                   ),
                 ],
               ),
-            ),
-            Align(
-              alignment: AlignmentDirectional(-0.85, 0),
-              child: Text(
-                'First Name',
-                textAlign: TextAlign.start,
-                style: TextStyle(
-                  color: Color(0xFF000000),
-                  fontSize: 16,
-                  fontFamily: 'Poppins',
-                ),
-              ),
-            ),
-            Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(20, 0, 20, 16),
-              child: TextFormField(
-                controller: textController1,
-                obscureText: false,
-                decoration: InputDecoration(
-                  labelStyle: TextStyle(
-                    color: Color(0xFF000000),
-                    fontSize: 16,
-                    fontFamily: 'Poppins',
-                  ),
-                  hintText: 'Your First name',
-                  hintStyle: TextStyle(
-                    color: Color(0xFF000000),
-                    fontSize: 16,
-                    fontFamily: 'Poppins',
-                  ),
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Color(0xFF000000),
-                      width: 2,
-                    ),
-                    borderRadius: BorderRadius.circular(3),
-                  ),
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Color(0xFF000000),
-                      width: 2,
-                    ),
-                    borderRadius: BorderRadius.circular(3),
-                  ),
-                  errorBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Color(0x00000000),
-                      width: 2,
-                    ),
-                    borderRadius: BorderRadius.circular(3),
-                  ),
-                  focusedErrorBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Color(0x00000000),
-                      width: 2,
-                    ),
-                    borderRadius: BorderRadius.circular(3),
-                  ),
-                  filled: true,
-                  fillColor: Color(0xFFDBE2E7),
-                  contentPadding: EdgeInsetsDirectional.fromSTEB(20, 24, 0, 24),
-                ),
-                style: TextStyle(
-                  color: Color(0xFF000000),
-                  fontSize: 16,
-                  fontFamily: 'Poppins',
-                ),
-              ),
-            ),
-            Align(
-              alignment: AlignmentDirectional(-0.85, 0),
-              child: Text(
-                'Last name',
-                style: TextStyle(
-                  color: Color(0xFF000000),
-                  fontSize: 16,
-                  fontFamily: 'Poppins',
-                ),
-              ),
-            ),
-            Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(20, 0, 20, 16),
-              child: TextFormField(
-                controller: textController2,
-                obscureText: false,
-                decoration: InputDecoration(
-                  labelStyle: TextStyle(
-                    color: Color(0xFF000000),
-                    fontSize: 16,
-                    fontFamily: 'Poppins',
-                  ),
-                  hintText: 'Your last name',
-                  hintStyle: TextStyle(
-                    color: Color(0xFF000000),
-                    fontSize: 16,
-                    fontFamily: 'Poppins',
-                  ),
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Color(0xFF000000),
-                      width: 2,
-                    ),
-                    borderRadius: BorderRadius.circular(3),
-                  ),
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Color(0xFF000000),
-                      width: 2,
-                    ),
-                    borderRadius: BorderRadius.circular(3),
-                  ),
-                  errorBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Color(0x00000000),
-                      width: 2,
-                    ),
-                    borderRadius: BorderRadius.circular(3),
-                  ),
-                  focusedErrorBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Color(0x00000000),
-                      width: 2,
-                    ),
-                    borderRadius: BorderRadius.circular(3),
-                  ),
-                  filled: true,
-                  fillColor: Color(0xFFDBE2E7),
-                  contentPadding: EdgeInsetsDirectional.fromSTEB(20, 24, 0, 24),
-                ),
-                style: TextStyle(
-                  color: Color(0xFF000000),
-                  fontSize: 16,
-                  fontFamily: 'Poppins',
-                ),
-              ),
-            ),
-            Align(
-              alignment: AlignmentDirectional(-0.85, 0),
-              child: Text(
-                'phone number',
-                style: TextStyle(
-                  color: Color(0xFF000000),
-                  fontSize: 16,
-                  fontFamily: 'Poppins',
-                ),
-              ),
-            ),
-            Row(
-              mainAxisSize: MainAxisSize.max,
-              children: [
-                Expanded(
-                  child: Align(
-                    alignment: AlignmentDirectional(0, 0),
-                    child: Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(20, 0, 20, 0),
-                      child: TextFormField(
-                        controller: textController3,
-                        obscureText: false,
-                        decoration: InputDecoration(
-                          labelText: 'Lastname',
-                          labelStyle: TextStyle(
-                            color: Color(0xFF000000),
-                            fontSize: 16,
-                            fontFamily: 'Poppins',
-                          ),
-                          hintText: 'Your full name...',
-                          hintStyle: TextStyle(
-                            color: Color(0xFF000000),
-                            fontSize: 16,
-                            fontFamily: 'Poppins',
-                          ),
-                          enabledBorder: OutlineInputBorder(
-                            borderSide: BorderSide(
-                              color: Color(0xFF0082FF),
-                              width: 2,
-                            ),
-                            borderRadius: BorderRadius.circular(3),
-                          ),
-                          focusedBorder: OutlineInputBorder(
-                            borderSide: BorderSide(
-                              color: Color(0xFF0082FF),
-                              width: 2,
-                            ),
-                            borderRadius: BorderRadius.circular(3),
-                          ),
-                          errorBorder: OutlineInputBorder(
-                            borderSide: BorderSide(
-                              color: Color(0x00000000),
-                              width: 2,
-                            ),
-                            borderRadius: BorderRadius.circular(3),
-                          ),
-                          focusedErrorBorder: OutlineInputBorder(
-                            borderSide: BorderSide(
-                              color: Color(0x00000000),
-                              width: 2,
-                            ),
-                            borderRadius: BorderRadius.circular(3),
-                          ),
-                          filled: true,
-                          fillColor:
-                              Color(0xFFDBE2E7).withOpacity(0.5000000000000001),
-                          contentPadding:
-                              EdgeInsetsDirectional.fromSTEB(20, 24, 0, 24),
+              Align(
+                alignment: AlignmentDirectional(0, 0.05),
+                child: Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(0, 24, 0, 0),
+                  child: TextButton(
+                    onPressed: () async {
+                      await Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Home(),
                         ),
-                        style: TextStyle(
-                          color: Color(0xFF000000),
-                          fontSize: 16,
-                          fontFamily: 'Poppins',
-                        ),
+                      );
+                    },
+                    child: Text(
+                      'Submit',
+                      style: TextStyle(
+                        color: Color(0xFF000000),
+                        fontSize: 16,
+                        fontFamily: 'Poppins',
                       ),
                     ),
-                  ),
-                ),
-                Align(
-                  alignment: AlignmentDirectional(0, 0.05),
-                  child: Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(0, 0, 10, 0),
-                    child: TextButton(
-                      onPressed: () async {},
-                      child: Text(
-                        'Verify',
-                        style: TextStyle(
-                          color: Color(0xFF0082FF),
-                          fontSize: 16,
-                          fontFamily: 'Poppins',
-                        ),
+                    style: TextButton.styleFrom(
+                      backgroundColor: Color(0xFF0082FF),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(3),
                       ),
-                      style: TextButton.styleFrom(
-                        backgroundColor: Color(0x00000000),
-                        shape: RoundedRectangleBorder(
-                          side: BorderSide(
-                            color: Color(0xFF0082FF),
-                            width: 2,
-                            style: BorderStyle.solid,
-                          ),
-                          borderRadius: BorderRadius.circular(3),
-                        ),
-                        padding: EdgeInsetsDirectional.fromSTEB(16, 12, 16, 12),
-                      ),
+                      padding: EdgeInsetsDirectional.fromSTEB(16, 12, 16, 12),
                     ),
-                  ),
-                ),
-              ],
-            ),
-            Align(
-              alignment: AlignmentDirectional(0, 0.05),
-              child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0, 24, 0, 0),
-                child: TextButton(
-                  onPressed: () async {
-                    await Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => Home(),
-                      ),
-                    );
-                  },
-                  child: Text(
-                    'Submit',
-                    style: TextStyle(
-                      color: Color(0xFF000000),
-                      fontSize: 16,
-                      fontFamily: 'Poppins',
-                    ),
-                  ),
-                  style: TextButton.styleFrom(
-                    backgroundColor: Color(0xFF0082FF),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(3),
-                    ),
-                    padding: EdgeInsetsDirectional.fromSTEB(16, 12, 16, 12),
                   ),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

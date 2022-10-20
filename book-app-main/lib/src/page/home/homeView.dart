@@ -1,10 +1,11 @@
+import 'package:book_app/src/page/detail/book_detail.dart';
 import 'package:book_app/src/page/home/home.dart';
-import 'package:book_app/src/page/home/widget/search_book.dart';
-import 'package:book_app/src/page/member/editProfile.dart';
-import 'package:book_app/src/settings/settings_controller.dart';
-import 'package:book_app/src/page/home/widget/search_book.dart';
+import 'package:book_app/src/page/home/signup_login/createAccount.dart';
+import 'package:book_app/src/page/home/signup_login/login.dart';
+import 'package:book_app/src/page/home/widget/borrow_return.dart';
+import 'package:book_app/src/page/home/widget/notification.dart';
+import 'package:book_app/src/page/member/profilePage.dart';
 import 'package:flutter/material.dart';
-import '';
 
 class Home extends StatefulWidget {
   const Home({key}) : super(key: key);
@@ -13,12 +14,12 @@ class Home extends StatefulWidget {
   _HomeState createState() => _HomeState();
 }
 
-int _index = 0;
+int _index = 1;
 final List<Widget> _tabs = [
+  ProfilePageWidget(),
   HomePage(),
-  HomePage(),
-  Search(),
-  EditProfileWidget(),
+  BorrowReturnCopyWidget(),
+  NotificationWidget(),
 ];
 
 class _HomeState extends State<Home> {

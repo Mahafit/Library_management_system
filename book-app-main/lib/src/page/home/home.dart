@@ -1,6 +1,8 @@
+import 'package:book_app/src/page/home/widget/cart.dart';
 import 'package:book_app/src/page/home/widget/coming_book.dart';
 import 'package:book_app/src/page/home/widget/new_release.dart';
 import 'package:book_app/src/page/home/widget/recommended_book.dart';
+import 'package:book_app/src/page/home/widget/search_book.dart';
 import 'package:book_app/src/page/home/widget/trending_book.dart';
 import 'package:flutter/material.dart';
 
@@ -15,9 +17,9 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 255, 198, 245),
+      backgroundColor: Colors.pink[50],
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 251, 124, 255),
+        backgroundColor: Color(0xFFA49CF1),
         elevation: 0,
         title: Text(
           'Book App',
@@ -26,13 +28,27 @@ class _HomePageState extends State<HomePage> {
         ),
         actions: [
           IconButton(
-              onPressed: () {},
+              onPressed: () async {
+                await Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => cartWidget(),
+                  ),
+                );
+              },
               icon: Icon(
                 Icons.shopping_cart_outlined,
                 color: Colors.white,
               )),
           IconButton(
-              onPressed: () {},
+              onPressed: () async {
+                await Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Search(),
+                  ),
+                );
+              },
               icon: Icon(
                 Icons.search,
                 color: Colors.white,

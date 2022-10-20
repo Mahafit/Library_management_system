@@ -16,7 +16,7 @@ class _SearchState extends State<Search> {
       length: 2,
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.pink[100],
+          backgroundColor: Color(0xFFA49CF1),
           elevation: 0,
           title: Container(
             width: double.infinity,
@@ -61,7 +61,7 @@ class _SearchState extends State<Search> {
         body: TabBarView(
           children: [
             Container(
-              color: Colors.pink[100],
+              color: Colors.white,
               child: Column(
                 children: [
                   Container(
@@ -80,7 +80,7 @@ class _SearchState extends State<Search> {
                         Text(
                           'Search by Category',
                           style: TextStyle(
-                              color: Colors.white,
+                              color: Colors.black,
                               fontWeight: FontWeight.w600,
                               fontSize: 20),
                         ),
@@ -103,7 +103,7 @@ class _SearchState extends State<Search> {
                         Text(
                           'Search by Author',
                           style: TextStyle(
-                              color: Colors.white,
+                              color: Colors.black,
                               fontWeight: FontWeight.w600,
                               fontSize: 20),
                         ),
@@ -126,7 +126,7 @@ class _SearchState extends State<Search> {
                         Text(
                           'Search by Book',
                           style: TextStyle(
-                              color: Colors.white,
+                              color: Colors.black,
                               fontWeight: FontWeight.w600,
                               fontSize: 20),
                         ),
@@ -146,7 +146,7 @@ class _SearchState extends State<Search> {
               ),
             ),
             Container(
-              color: Colors.pink[100],
+              color: Colors.white,
               child: Column(
                 children: [
                   Container(
@@ -165,7 +165,7 @@ class _SearchState extends State<Search> {
                         Text(
                           'History',
                           style: TextStyle(
-                              color: Colors.white,
+                              color: Colors.black,
                               fontWeight: FontWeight.w600,
                               fontSize: 20),
                         ),

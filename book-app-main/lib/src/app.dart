@@ -1,4 +1,5 @@
 import 'package:book_app/src/page/home/homeView.dart';
+import 'package:book_app/src/page/home/signup_login/login.dart';
 import 'package:book_app/src/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -75,7 +76,7 @@ class MyApp extends StatelessWidget {
                     return SettingsView(controller: settingsController);
 
                   default:
-                    return Home();
+                    return LoginWidget();
                 }
               },
             );

@@ -48,6 +48,7 @@ class TrendingBook extends StatelessWidget {
                                   style: const TextStyle(
                                     fontSize: 16,
                                     fontWeight: FontWeight.bold,
+                                    color: Colors.black,
                                   ),
                                   overflow: TextOverflow.ellipsis,
                                 ),
@@ -60,7 +61,7 @@ class TrendingBook extends StatelessWidget {
                           ),
                           Text(
                             book.author!,
-                            style: TextStyle(color: Colors.grey),
+                            style: TextStyle(color: Colors.black),
                           ),
                           const SizedBox(
                             height: 15,
@@ -72,20 +73,6 @@ class TrendingBook extends StatelessWidget {
                           ),
                           const SizedBox(
                             height: 15,
-                          ),
-                          Row(
-                            children: [
-                              _buildIconText(Icons.star, Colors.orange[300]!,
-                                  '${book.score}(${book.review}k)'),
-                              const SizedBox(
-                                width: 10,
-                              ),
-                              _buildIconText(
-                                Icons.visibility,
-                                Colors.white,
-                                '${book.view}M Read',
-                              ),
-                            ],
                           ),
                         ],
                       ))

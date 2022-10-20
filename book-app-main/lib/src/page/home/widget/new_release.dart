@@ -5,6 +5,8 @@ import 'package:book_app/src/page/home/widget/coming_book.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../../detail/book_detail copy.dart';
+
 class Newrelease extends StatelessWidget {
   final recommendedList = Book.generateRecommendedBook();
   Newrelease({Key? key}) : super(key: key);
@@ -33,7 +35,7 @@ class Newrelease extends StatelessWidget {
                 return GestureDetector(
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => DetailPage(book)));
+                        builder: (context) => BookDetail(book)));
                   },
                   child: Stack(
                     children: [
@@ -55,7 +57,10 @@ class Newrelease extends StatelessWidget {
                               padding: EdgeInsets.symmetric(vertical: 2),
                               child: Text(
                                 book.name!,
-                                overflow: TextOverflow.ellipsis,
+                                style: TextStyle(
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.black),
                               ),
                             ),
                             Text(
@@ -98,9 +103,7 @@ class Newrelease extends StatelessWidget {
           Text(
             text,
             style: const TextStyle(
-                fontSize: 12,
-                fontWeight: FontWeight.bold,
-                color: Colors.white70),
+                fontSize: 12, fontWeight: FontWeight.bold, color: Colors.black),
           )
         ],
       ),
