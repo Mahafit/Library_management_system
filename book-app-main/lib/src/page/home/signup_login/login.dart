@@ -352,7 +352,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                     );
                                   },
                                   child: Text(
-                                    ' Create Account',
+                                    ' Sign up',
                                     style: TextStyle(
                                       fontFamily: 'Poppins',
                                       fontSize: 16,

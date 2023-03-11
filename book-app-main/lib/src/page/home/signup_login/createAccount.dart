@@ -107,12 +107,12 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                 padding:
                                     EdgeInsetsDirectional.fromSTEB(10, 0, 0, 0),
                                 child: Text(
-                                  'Library book app',
+                                  'LIBRARY BOOK APP',
                                   style: TextStyle(
                                     fontFamily: 'Poppins',
                                     // cmu hexcolor #9e76b4
                                     color: Color(0xFF9e76b4),
-                                    fontSize: 30,
+                                    fontSize: 25,
                                     fontWeight: FontWeight.w600,
                                   ),
                                 ),
@@ -121,7 +121,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 16, 0, 4),
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 30, 0, 4),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -130,9 +130,9 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                 'Get Started Below,',
                                 style: TextStyle(
                                   fontFamily: 'Poppins',
-                                  color: Colors.black,
+                                  color: Color(0xFF212121),
                                   fontSize: 18,
-                                  fontWeight: FontWeight.w600,
+                                  fontWeight: FontWeight.w400,
                                 ),
                               ),
                             ],
@@ -162,7 +162,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                             Theme.of(context).primaryColorLight,
                                         width: 2,
                                       ),
-                                      borderRadius: BorderRadius.circular(60),
+                                      borderRadius: BorderRadius.circular(20),
                                     ),
                                     focusedBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -170,21 +170,21 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                             Theme.of(context).primaryColorLight,
                                         width: 2,
                                       ),
-                                      borderRadius: BorderRadius.circular(60),
+                                      borderRadius: BorderRadius.circular(20),
                                     ),
                                     errorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 2,
                                       ),
-                                      borderRadius: BorderRadius.circular(60),
+                                      borderRadius: BorderRadius.circular(20),
                                     ),
                                     focusedErrorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 2,
                                       ),
-                                      borderRadius: BorderRadius.circular(60),
+                                      borderRadius: BorderRadius.circular(20),
                                     ),
                                     filled: true,
                                     fillColor: Color(0xFFEFF4F7),
@@ -224,7 +224,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                             Theme.of(context).primaryColorLight,
                                         width: 2,
                                       ),
-                                      borderRadius: BorderRadius.circular(8),
+                                      borderRadius: BorderRadius.circular(20),
                                     ),
                                     focusedBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -232,14 +232,14 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                             Theme.of(context).primaryColorLight,
                                         width: 2,
                                       ),
-                                      borderRadius: BorderRadius.circular(8),
+                                      borderRadius: BorderRadius.circular(20),
                                     ),
                                     errorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 2,
                                       ),
-                                      borderRadius: BorderRadius.circular(8),
+                                      borderRadius: BorderRadius.circular(20),
                                     ),
                                     focusedErrorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -286,7 +286,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                             Theme.of(context).primaryColorLight,
                                         width: 2,
                                       ),
-                                      borderRadius: BorderRadius.circular(8),
+                                      borderRadius: BorderRadius.circular(20),
                                     ),
                                     focusedBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -294,21 +294,21 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                             Theme.of(context).primaryColorLight,
                                         width: 2,
                                       ),
-                                      borderRadius: BorderRadius.circular(8),
+                                      borderRadius: BorderRadius.circular(20),
                                     ),
                                     errorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 2,
                                       ),
-                                      borderRadius: BorderRadius.circular(8),
+                                      borderRadius: BorderRadius.circular(20),
                                     ),
                                     focusedErrorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 2,
                                       ),
-                                      borderRadius: BorderRadius.circular(8),
+                                      borderRadius: BorderRadius.circular(20),
                                     ),
                                     filled: true,
                                     fillColor: Color(0xFFEFF4F7),
@@ -339,8 +339,8 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                             ],
                           ),
                         ),
-                        Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 16, 0, 0),
+                        Container(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 16, 0, 20),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -350,7 +350,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                   controller: emailAddressController3,
                                   obscureText: !emailAddressVisibility2,
                                   decoration: InputDecoration(
-                                    labelText: 'Password',
+                                    labelText: 'Confirm Password',
                                     labelStyle:
                                         TextStyle(color: Color(0xFF8B97A2)),
                                     hintText: 'Enter your password here...',
@@ -362,7 +362,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                             Theme.of(context).primaryColorLight,
                                         width: 2,
                                       ),
-                                      borderRadius: BorderRadius.circular(8),
+                                      borderRadius: BorderRadius.circular(20),
                                     ),
                                     focusedBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -370,27 +370,27 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                             Theme.of(context).primaryColorLight,
                                         width: 2,
                                       ),
-                                      borderRadius: BorderRadius.circular(8),
+                                      borderRadius: BorderRadius.circular(20),
                                     ),
                                     errorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 2,
                                       ),
-                                      borderRadius: BorderRadius.circular(8),
+                                      borderRadius: BorderRadius.circular(20),
                                     ),
                                     focusedErrorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 2,
                                       ),
-                                      borderRadius: BorderRadius.circular(8),
+                                      borderRadius: BorderRadius.circular(20),
                                     ),
                                     filled: true,
                                     fillColor: Color(0xFFEFF4F7),
                                     contentPadding:
                                         EdgeInsetsDirectional.fromSTEB(
-                                            16, 24, 0, 24),
+                                            16, 24, 30, 24),
                                     suffixIcon: InkWell(
                                       onTap: () => setState(
                                         () => emailAddressVisibility2 =
@@ -415,41 +415,40 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                             ],
                           ),
                         ),
-                        Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 24, 0, 0),
-                          child: Row(
-                            mainAxisSize: MainAxisSize.max,
-                            mainAxisAlignment: MainAxisAlignment.end,
-                            children: [
-                              Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 0, 4, 0),
-                                child: TextButton(
+                        Container(
+                            height: 50,
+                            // padding: EdgeInsetsDirectional.all(value),
+                            alignment: Alignment.center,
+                          child: TextButton(
                                   onPressed: () async {
-                                    print('IconButton pressed ...');
-                                  },
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                        builder: (context) => const LoginWidget(),
+    ),
+    );
+    },
+
                                   child: Text(
-                                    'Create Account',
+                                    'SIGN UP',
                                     style: TextStyle(
                                       color: Colors.white,
-                                      fontSize: 18,
+                                      fontSize: 25,
                                       fontFamily: 'Poppins',
                                     ),
                                   ),
                                   style: TextButton.styleFrom(
                                     backgroundColor:
-                                        Color.fromRGBO(75, 57, 239, 1),
+                                    Color(0xFF9e76b4),
                                     shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(40),
+                                      borderRadius: BorderRadius.circular(10),
                                     ),
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         16, 12, 16, 12),
                                   ),
                                 ),
                               ),
-                            ],
-                          ),
-                        ),
+
                         Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(0, 16, 0, 24),
                           child: Row(
@@ -470,7 +469,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                               ),
                               Padding(
                                 padding:
-                                    EdgeInsetsDirectional.fromSTEB(20, 0, 0, 0),
+                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
                                 child: InkWell(
                                   onTap: () async {
                                     await Navigator.push(
@@ -481,12 +480,11 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                     );
                                   },
                                   child: Text(
-                                    'login',
+                                    ' Sign in',
                                     style: TextStyle(
-                                      decoration: TextDecoration.underline,
                                       fontFamily: 'Poppins',
                                       fontSize: 16,
-                                      color: Color(0xFF39D2C0),
+                                      color: Color(0xFF9e76b4),
                                       // fontWeight: FontWeight.bold,
                                       fontWeight: FontWeight.w600,
                                     ),
