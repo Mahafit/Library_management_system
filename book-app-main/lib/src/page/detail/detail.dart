@@ -1,6 +1,7 @@
 import 'package:book_app/src/model/book.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class DetailPage extends StatelessWidget {
   final Book book;
@@ -44,7 +45,7 @@ class DetailPage extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 15,
           ),
           Column(
@@ -54,7 +55,7 @@ class DetailPage extends StatelessWidget {
                 child: Text(
                   book.name!,
                   textAlign: TextAlign.center,
-                  style: TextStyle(
+                  style: GoogleFonts.poppins(
                       fontWeight: FontWeight.bold, fontSize: 24, height: 1.2),
                 ),
               ),
@@ -89,7 +90,7 @@ class DetailPage extends StatelessWidget {
                   children: [
                     Text(
                       'Author: ${book.author}',
-                      style: TextStyle(
+                      style: GoogleFonts.poppins(
                           fontWeight: FontWeight.normal, fontSize: 20),
                     ),
                   ],

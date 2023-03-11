@@ -62,7 +62,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
             children: [
               Container(
                 width: double.infinity,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Colors.white,
                   boxShadow: [
                     BoxShadow(
@@ -79,7 +79,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                   ),
                 ),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(20, 0, 20, 0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(20, 0, 20, 0),
                   child: SingleChildScrollView(
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
@@ -87,7 +87,8 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 56, 0, 0),
+                          padding:
+                              const EdgeInsetsDirectional.fromSTEB(0, 56, 0, 0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             children: [
@@ -95,21 +96,22 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                 width: 100,
                                 height: 100,
                                 clipBehavior: Clip.antiAlias,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   shape: BoxShape.circle,
                                 ),
                                 child: Image.asset(
                                   'assets/images/logo.png',
                                 ),
                               ),
-                              Padding(
+                              const Padding(
                                 padding:
                                     EdgeInsetsDirectional.fromSTEB(10, 0, 0, 0),
                                 child: Text(
                                   'Library book app',
                                   style: TextStyle(
                                     fontFamily: 'Poppins',
-                                    color: Color(0xFFA49CF1),
+                                    // cmu hexcolor #9e76b4
+                                    color: Color(0xFF9e76b4),
                                     fontSize: 30,
                                     fontWeight: FontWeight.w600,
                                   ),
@@ -123,7 +125,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
+                            children: const [
                               Text(
                                 'Get Started Below,',
                                 style: TextStyle(
@@ -137,7 +139,8 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 16, 0, 0),
+                          padding:
+                              const EdgeInsetsDirectional.fromSTEB(0, 16, 0, 0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -159,7 +162,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                             Theme.of(context).primaryColorLight,
                                         width: 2,
                                       ),
-                                      borderRadius: BorderRadius.circular(8),
+                                      borderRadius: BorderRadius.circular(60),
                                     ),
                                     focusedBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -167,21 +170,21 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                             Theme.of(context).primaryColorLight,
                                         width: 2,
                                       ),
-                                      borderRadius: BorderRadius.circular(8),
+                                      borderRadius: BorderRadius.circular(60),
                                     ),
                                     errorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 2,
                                       ),
-                                      borderRadius: BorderRadius.circular(8),
+                                      borderRadius: BorderRadius.circular(60),
                                     ),
                                     focusedErrorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 2,
                                       ),
-                                      borderRadius: BorderRadius.circular(8),
+                                      borderRadius: BorderRadius.circular(60),
                                     ),
                                     filled: true,
                                     fillColor: Color(0xFFEFF4F7),

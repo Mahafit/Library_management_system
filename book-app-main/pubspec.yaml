@@ -18,6 +18,8 @@ dependencies:
   bubble_bottom_bar: ^2.0.0
   calendar_timeline: ^1.0.5
   mysql1: ^0.20.0
+  google_fonts: ^4.0.3
+  hexcolor: ^3.0.1
 
 dev_dependencies:
   flutter_test:
