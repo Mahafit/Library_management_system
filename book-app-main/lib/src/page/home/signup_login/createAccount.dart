@@ -79,7 +79,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                   ),
                 ),
                 child: Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(20, 0, 20, 0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(30, 0, 30, 0),
                   child: SingleChildScrollView(
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
@@ -486,7 +486,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                       fontSize: 16,
                                       color: Color(0xFF9e76b4),
                                       // fontWeight: FontWeight.bold,
-                                      fontWeight: FontWeight.w600,
+                                      fontWeight: FontWeight.w500,
                                     ),
                                   ),
                                 ),

@@ -17,7 +17,7 @@ class Bookedit extends StatelessWidget {
             mainAxisSize: MainAxisSize.max,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16, 45, 16, 8),
+                padding: const EdgeInsetsDirectional.fromSTEB(16, 45, 16, 8),
                 child: Container(
                   width: double.infinity,
                   decoration: BoxDecoration(
@@ -29,13 +29,13 @@ class Bookedit extends StatelessWidget {
                     ),
                   ),
                   child: Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(8, 8, 8, 8),
+                    padding: const EdgeInsetsDirectional.fromSTEB(8, 8, 8, 8),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Padding(
                             padding:
-                                EdgeInsetsDirectional.fromSTEB(0, 0, 300, 0),
+                                const EdgeInsetsDirectional.fromSTEB(0, 0, 300, 0),
                             child: GestureDetector(
                               onTap: () => Navigator.of(context).pop(),
                               child: Container(
@@ -50,11 +50,11 @@ class Bookedit extends StatelessWidget {
                               ),
                             )),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 15, 0, 0),
+                          padding: const EdgeInsetsDirectional.fromSTEB(0, 15, 0, 0),
                           child: Text(
                             book.name!,
                             textAlign: TextAlign.center,
-                            style: TextStyle(
+                            style: const TextStyle(
                                 color: Colors.black,
                                 fontWeight: FontWeight.bold,
                                 fontSize: 24,
@@ -62,7 +62,7 @@ class Bookedit extends StatelessWidget {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 5, 0, 0),
+                          padding: const EdgeInsetsDirectional.fromSTEB(0, 5, 0, 0),
                           child: Image.asset(
                             book.imgUrl!,
                             width: 150,
@@ -86,11 +86,11 @@ class Bookedit extends StatelessWidget {
                                 )
                                 .toList()),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
+                          padding: const EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
                           child: Text(
                             book.desc!,
                             textAlign: TextAlign.center,
-                            style: TextStyle(
+                            style: const TextStyle(
                                 color: Colors.black,
                                 fontWeight: FontWeight.bold,
                                 fontSize: 16,
@@ -98,24 +98,24 @@ class Bookedit extends StatelessWidget {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(60, 5, 0, 0),
+                          padding: const EdgeInsetsDirectional.fromSTEB(60, 5, 0, 0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Padding(
                                 padding:
-                                    EdgeInsetsDirectional.fromSTEB(10, 5, 0, 0),
+                                    const EdgeInsetsDirectional.fromSTEB(10, 5, 0, 0),
                                 child: Container(
                                   width: 100,
                                   decoration: BoxDecoration(
-                                    color: Color(0xFFE6E6E6),
+                                    color: const Color(0xFFE6E6E6),
                                     border: Border.all(
-                                      color: Color(0xFFE491FF),
+                                      color: const Color(0xFFE491FF),
                                     ),
                                   ),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
-                                    children: [
+                                    children: const [
                                       Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             0, 5, 0, 0),
@@ -145,18 +145,18 @@ class Bookedit extends StatelessWidget {
                               ),
                               Padding(
                                 padding:
-                                    EdgeInsetsDirectional.fromSTEB(10, 5, 0, 0),
+                                    const EdgeInsetsDirectional.fromSTEB(10, 5, 0, 0),
                                 child: Container(
                                   width: 100,
                                   decoration: BoxDecoration(
-                                    color: Color(0xFFE6E6E6),
+                                    color: const Color(0xFFE6E6E6),
                                     border: Border.all(
-                                      color: Color(0xFFE491FF),
+                                      color: const Color(0xFFE491FF),
                                     ),
                                   ),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
-                                    children: [
+                                    children: const [
                                       Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             0, 5, 0, 0),
@@ -188,11 +188,11 @@ class Bookedit extends StatelessWidget {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(10, 10, 0, 0),
+                          padding: const EdgeInsetsDirectional.fromSTEB(10, 10, 0, 0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             children: [
-                              Text(
+                              const Text(
                                 'ผู้แต่ง',
                                 style: TextStyle(
                                   color: Colors.black,
@@ -202,10 +202,10 @@ class Bookedit extends StatelessWidget {
                               ),
                               Padding(
                                 padding:
-                                    EdgeInsetsDirectional.fromSTEB(70, 0, 0, 0),
+                                    const EdgeInsetsDirectional.fromSTEB(70, 0, 0, 0),
                                 child: Text(
                                   book.author!,
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                     color: Colors.black,
                                     fontSize: 12,
                                     fontWeight: FontWeight.w500,
@@ -216,10 +216,10 @@ class Bookedit extends StatelessWidget {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(10, 10, 0, 0),
+                          padding: const EdgeInsetsDirectional.fromSTEB(10, 10, 0, 0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
-                            children: [
+                            children: const [
                               Text(
                                 'ผู้แปล',
                                 style: TextStyle(
@@ -244,10 +244,10 @@ class Bookedit extends StatelessWidget {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(10, 10, 0, 0),
+                          padding: const EdgeInsetsDirectional.fromSTEB(10, 10, 0, 0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
-                            children: [
+                            children: const [
                               Text(
                                 'สำนักพิมพ์',
                                 style: TextStyle(
@@ -272,10 +272,10 @@ class Bookedit extends StatelessWidget {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(10, 10, 0, 0),
+                          padding: const EdgeInsetsDirectional.fromSTEB(10, 10, 0, 0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
-                            children: [
+                            children: const [
                               Text(
                                 'พิมพ์ครั้งที่',
                                 style: TextStyle(
@@ -300,10 +300,10 @@ class Bookedit extends StatelessWidget {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(10, 10, 0, 0),
+                          padding: const EdgeInsetsDirectional.fromSTEB(10, 10, 0, 0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
-                            children: [
+                            children: const [
                               Text(
                                 'ISBN',
                                 style: TextStyle(
@@ -328,10 +328,10 @@ class Bookedit extends StatelessWidget {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(10, 10, 0, 0),
+                          padding: const EdgeInsetsDirectional.fromSTEB(10, 10, 0, 0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
-                            children: [
+                            children: const [
                               Text(
                                 'เล่มอื่นๆในซีรีย์',
                                 style: TextStyle(
@@ -348,14 +348,14 @@ class Bookedit extends StatelessWidget {
                           children: [
                             Padding(
                               padding:
-                                  EdgeInsetsDirectional.fromSTEB(30, 5, 0, 0),
+                                  const EdgeInsetsDirectional.fromSTEB(30, 5, 0, 0),
                               child: Container(
                                 width: 100,
                                 height: 100,
                                 decoration: BoxDecoration(
-                                  color: Color(0xFFEEEEEE),
+                                  color: const Color(0xFFEEEEEE),
                                   border: Border.all(
-                                    color: Color(0xFFE491FF),
+                                    color: const Color(0xFFE491FF),
                                   ),
                                 ),
                                 child: Column(
@@ -372,11 +372,11 @@ class Bookedit extends StatelessWidget {
                             ),
                             Padding(
                               padding:
-                                  EdgeInsetsDirectional.fromSTEB(30, 5, 0, 0),
+                                  const EdgeInsetsDirectional.fromSTEB(30, 5, 0, 0),
                               child: Container(
                                 width: 100,
                                 height: 100,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   color: Color(0xFFEEEEEE),
                                 ),
                                 child: Column(
@@ -394,12 +394,12 @@ class Bookedit extends StatelessWidget {
                           ],
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 30, 0, 0),
+                          padding: const EdgeInsetsDirectional.fromSTEB(0, 30, 0, 0),
                           child: TextButton(
                             onPressed: () async {
                               print('Button pressed ...');
                             },
-                            child: Text(
+                            child: const Text(
                               'Submit',
                               style: TextStyle(
                                 color: Color(0xFF000000),
@@ -408,11 +408,11 @@ class Bookedit extends StatelessWidget {
                               ),
                             ),
                             style: TextButton.styleFrom(
-                              backgroundColor: Color(0xFF0082FF),
+                              backgroundColor: const Color(0xFF0082FF),
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(3),
                               ),
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16, 12, 16, 12),
                             ),
                           ),

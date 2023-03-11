@@ -105,7 +105,7 @@ class _BookDetailWidgetState extends State<BookDetailWidget> {
                                   ),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
-                                    children: [
+                                    children: const [
                                       Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             0, 5, 0, 0),
@@ -146,7 +146,7 @@ class _BookDetailWidgetState extends State<BookDetailWidget> {
                                   ),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
-                                    children: [
+                                    children: const [
                                       Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             0, 5, 0, 0),
@@ -181,7 +181,7 @@ class _BookDetailWidgetState extends State<BookDetailWidget> {
                           padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
-                            children: [
+                            children: const [
                               Text(
                                 'ผู้แต่ง',
                                 style: TextStyle(
@@ -209,7 +209,7 @@ class _BookDetailWidgetState extends State<BookDetailWidget> {
                           padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
-                            children: [
+                            children: const [
                               Text(
                                 'ผู้แปล',
                                 style: TextStyle(
@@ -237,7 +237,7 @@ class _BookDetailWidgetState extends State<BookDetailWidget> {
                           padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
-                            children: [
+                            children: const [
                               Text(
                                 'สำนักพิมพ์',
                                 style: TextStyle(
@@ -265,7 +265,7 @@ class _BookDetailWidgetState extends State<BookDetailWidget> {
                           padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
-                            children: [
+                            children: const [
                               Text(
                                 'พิมพ์ครั้งที่',
                                 style: TextStyle(
@@ -293,7 +293,7 @@ class _BookDetailWidgetState extends State<BookDetailWidget> {
                           padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
-                            children: [
+                            children: const [
                               Text(
                                 'ISBN',
                                 style: TextStyle(

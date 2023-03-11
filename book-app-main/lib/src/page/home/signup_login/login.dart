@@ -264,7 +264,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                           ),
                         ),
                         Container(
-                          height: 70,
+                          height: 50,
                           alignment: Alignment.centerRight,
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -277,10 +277,10 @@ class _LoginWidgetState extends State<LoginWidget> {
                                 child: Text(
                                   'Forgot Password?',
                                   style: TextStyle(
-                                    decoration: TextDecoration.underline,
+                                    // decoration: TextDecoration.underline,
                                     fontFamily: 'Poppins',
                                     fontSize: 16,
-                                    color: Colors.black,
+                                    color: Color(0xFF9e76b4),
                                   ),
                                 ),
                               ),
@@ -290,7 +290,7 @@ class _LoginWidgetState extends State<LoginWidget> {
 
                         ),
                         Container(
-                          height: 50,
+                          height: 70,
                           // padding: EdgeInsetsDirectional.all(value),
                           alignment: Alignment.center,
                           child: TextButton(
@@ -298,7 +298,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => Home(),
+                                  builder: (context) => const Home(),
                                 ),
                               );
                             },
@@ -357,6 +357,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                       fontFamily: 'Poppins',
                                       fontSize: 16,
                                       color: Color(0xFF9e76b4),
+                                      fontWeight: FontWeight.w500,
                                     ),
                                   ),
                                 ),
