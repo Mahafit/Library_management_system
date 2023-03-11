@@ -17,7 +17,7 @@ class _MemberWidgetState extends State<MemberWidget> {
       key: scaffoldKey,
       backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Color(0xFFFFD5DA),
+        backgroundColor: Color(0xFF9e76b4),
         automaticallyImplyLeading: false,
         title: Text(
           'Member 1 Year',
@@ -203,7 +203,7 @@ class _MemberWidgetState extends State<MemberWidget> {
                             ),
                           ),
                           style: TextButton.styleFrom(
-                            backgroundColor: Colors.pink[200],
+                            backgroundColor: Color(0xFF9e76b4),
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(3),
                             ),

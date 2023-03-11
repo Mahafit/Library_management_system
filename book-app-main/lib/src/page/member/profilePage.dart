@@ -31,7 +31,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
             width: MediaQuery.of(context).size.width,
             height: 160,
             decoration: BoxDecoration(
-              color: Color(0xFFA49CF1),
+              color: Color(0xFF9e76b4),
             ),
             child: Padding(
               padding: EdgeInsetsDirectional.fromSTEB(20, 40, 20, 0),
@@ -42,7 +42,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                 children: [
                   Card(
                     clipBehavior: Clip.antiAliasWithSaveLayer,
-                    color: Color(0xFF30B2A3),
+                    color: Color(0xFF9e76b4),
                     elevation: 0,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(60),
@@ -68,7 +68,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text('Mr. Rogers',
+                          Text('Persona',
                               style: TextStyle(
                                 fontFamily: 'Poppins',
                                 color: Colors.white,
@@ -97,7 +97,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                   width: MediaQuery.of(context).size.width,
                   height: 50,
                   decoration: BoxDecoration(
-                    color: Color(0xFFA49CF1),
+                    color: Color(0xFF9e76b4),
                     boxShadow: [
                       BoxShadow(
                         blurRadius: 0,
@@ -182,7 +182,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                               'Edit Profile',
                               style: TextStyle(
                                 fontFamily: 'Poppins',
-                                color: Color(0xFFE4A2FF),
+                                color: Color(0xFF9e76b4),
                                 fontSize: 16,
                                 fontWeight: FontWeight.w600,
                               ),
@@ -259,7 +259,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                 'Change Password',
                                 style: TextStyle(
                                   fontFamily: 'Poppins',
-                                  color: Color(0xFFE4A2FF),
+                                  color: Color(0xFF9e76b4),
                                   fontSize: 16,
                                   fontWeight: FontWeight.w600,
                                 ),
@@ -331,7 +331,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                           'Manage Book',
                           style: TextStyle(
                             fontFamily: 'Poppins',
-                            color: Color(0xFFE4A2FF),
+                            color: Color(0xFF9e76b4),
                             fontSize: 16,
                             fontWeight: FontWeight.w600,
                           ),
@@ -401,7 +401,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                             'History',
                             style: TextStyle(
                               fontFamily: 'Poppins',
-                              color: Color(0xFFE4A2FF),
+                              color: Color(0xFF9e76b4),
                               fontSize: 16,
                               fontWeight: FontWeight.w600,
                             ),
@@ -471,7 +471,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                           'Payment Information',
                           style: TextStyle(
                             fontFamily: 'Poppins',
-                            color: Color(0xFFE4A2FF),
+                            color: Color(0xFF9e76b4),
                             fontSize: 16,
                             fontWeight: FontWeight.w600,
                           ),
@@ -541,7 +541,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                             'Setting',
                             style: TextStyle(
                               fontFamily: 'Poppins',
-                              color: Color(0xFFE4A2FF),
+                              color: Color(0xFF9e76b4),
                               fontSize: 16,
                               fontWeight: FontWeight.w600,
                             ),
@@ -578,9 +578,9 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                 );
               },
               child: Text(
-                'Log Out',
+                ' Log Out ',
                 style: TextStyle(
-                  color: Color(0xFF000000),
+                  color: Colors.white,
                   fontSize: 16,
                   fontFamily: 'Poppins',
                 ),
@@ -588,7 +588,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
               style: TextButton.styleFrom(
                 backgroundColor: Colors.pink[200],
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(3),
+                  borderRadius: BorderRadius.circular(20),
                 ),
                 padding: EdgeInsetsDirectional.fromSTEB(16, 12, 16, 12),
               ),

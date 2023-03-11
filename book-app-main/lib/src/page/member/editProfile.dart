@@ -32,7 +32,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
       key: scaffoldKey,
       backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Color(0xFFA49CF1),
+        backgroundColor: Color(0xFF9e76b4),
         automaticallyImplyLeading: false,
         leading: InkWell(
           onTap: () async {
@@ -59,12 +59,17 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
+
             mainAxisSize: MainAxisSize.max,
             children: [
               //height: 100,
               //เว้นวรรค
-              Padding(
-                padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
+              SizedBox(
+
+                height: 30,
+              ),
+              Container(
+                alignment: Alignment.center,
                 child: Container(
                   width: 100,
                   height: 100,
@@ -79,13 +84,13 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                   ),
                 ),
               ),
-              Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 16),
+              Container(
+                alignment: Alignment.center,
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    //buttonwidget -ฬ
+                    //buttonwidget
                     TextButton(
                       onPressed: () async {
                         print('button pressed ...');
@@ -93,7 +98,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                       child: Text(
                         'Change Photo',
                         style: TextStyle(
-                          color: Color(0xFFFB7CFF),
+                          color: Color(0xFF9e76b4),
                           fontSize: 16,
                           fontFamily: 'Poppins',
                         ),
@@ -102,8 +107,12 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                   ],
                 ),
               ),
-              Align(
-                alignment: AlignmentDirectional(-0.85, 0),
+              SizedBox(
+                height: 20,
+              ),
+              Container(
+                padding: EdgeInsetsDirectional.fromSTEB(30, 0, 30, 0),
+                alignment: Alignment.centerLeft ,
                 child: Text(
                   'First Name',
                   textAlign: TextAlign.start,
@@ -114,50 +123,53 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                   ),
                 ),
               ),
+              SizedBox(
+                height: 15,
+              ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(20, 0, 20, 16),
+                padding: EdgeInsetsDirectional.fromSTEB(30, 0, 30, 16),
                 child: TextFormField(
                   controller: textController1,
                   obscureText: false,
                   decoration: InputDecoration(
                     labelStyle: TextStyle(
-                      color: Color(0xFF000000),
+                      color: Color(0xFFDBE2E7),
                       fontSize: 16,
                       fontFamily: 'Poppins',
                     ),
-                    hintText: 'Your First name',
+                    hintText: 'First name',
                     hintStyle: TextStyle(
-                      color: Color(0xFF000000),
+                      color: Color(0xFF95A1AC),
                       fontSize: 16,
                       fontFamily: 'Poppins',
                     ),
                     enabledBorder: OutlineInputBorder(
                       borderSide: BorderSide(
-                        color: Color(0xFF000000),
+                        color: Color(0xFFDBE2E7),
                         width: 2,
                       ),
-                      borderRadius: BorderRadius.circular(3),
+                      borderRadius: BorderRadius.circular(20),
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderSide: BorderSide(
-                        color: Color(0xFF000000),
+                        color: Color(0xFFDBE2E7),
                         width: 2,
                       ),
-                      borderRadius: BorderRadius.circular(3),
+                      borderRadius: BorderRadius.circular(20),
                     ),
                     errorBorder: OutlineInputBorder(
                       borderSide: BorderSide(
-                        color: Color(0x00000000),
+                        color: Color(0xFFDBE2E7),
                         width: 2,
                       ),
-                      borderRadius: BorderRadius.circular(3),
+                      borderRadius: BorderRadius.circular(20),
                     ),
                     focusedErrorBorder: OutlineInputBorder(
                       borderSide: BorderSide(
-                        color: Color(0x00000000),
+                        color: Color(0xFFDBE2E7),
                         width: 2,
                       ),
-                      borderRadius: BorderRadius.circular(3),
+                      borderRadius: BorderRadius.circular(20),
                     ),
                     filled: true,
                     fillColor: Color(0xFFDBE2E7),
@@ -165,14 +177,15 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                         EdgeInsetsDirectional.fromSTEB(20, 24, 0, 24),
                   ),
                   style: TextStyle(
-                    color: Color(0xFF000000),
+                    color: Color(0xFFDBE2E7),
                     fontSize: 16,
                     fontFamily: 'Poppins',
                   ),
                 ),
               ),
-              Align(
-                alignment: AlignmentDirectional(-0.85, 0),
+              Container(
+                padding: EdgeInsetsDirectional.fromSTEB(30, 0, 30, 0),
+                alignment: Alignment.centerLeft ,
                 child: Text(
                   'Last name',
                   style: TextStyle(
@@ -182,50 +195,53 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                   ),
                 ),
               ),
+              SizedBox(
+                height: 15,
+              ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(20, 0, 20, 16),
+                padding: EdgeInsetsDirectional.fromSTEB(30, 0, 30, 16),
                 child: TextFormField(
                   controller: textController2,
                   obscureText: false,
                   decoration: InputDecoration(
                     labelStyle: TextStyle(
-                      color: Color(0xFF000000),
+                      color: Color(0xFFDBE2E7),
                       fontSize: 16,
                       fontFamily: 'Poppins',
                     ),
-                    hintText: 'Your last name',
+                    hintText: 'last name',
                     hintStyle: TextStyle(
-                      color: Color(0xFF000000),
+                      color: Color(0xFF95A1AC),
                       fontSize: 16,
                       fontFamily: 'Poppins',
                     ),
                     enabledBorder: OutlineInputBorder(
                       borderSide: BorderSide(
-                        color: Color(0xFF000000),
+                        color: Color(0xFFDBE2E7),
                         width: 2,
                       ),
-                      borderRadius: BorderRadius.circular(3),
+                      borderRadius: BorderRadius.circular(20),
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderSide: BorderSide(
-                        color: Color(0xFF000000),
+                        color: Color(0xFFDBE2E7),
                         width: 2,
                       ),
-                      borderRadius: BorderRadius.circular(3),
+                      borderRadius: BorderRadius.circular(20),
                     ),
                     errorBorder: OutlineInputBorder(
                       borderSide: BorderSide(
-                        color: Color(0x00000000),
+                        color: Color(0xFFDBE2E7),
                         width: 2,
                       ),
-                      borderRadius: BorderRadius.circular(3),
+                      borderRadius: BorderRadius.circular(20),
                     ),
                     focusedErrorBorder: OutlineInputBorder(
                       borderSide: BorderSide(
-                        color: Color(0x00000000),
+                        color: Color(0xFFDBE2E7),
                         width: 2,
                       ),
-                      borderRadius: BorderRadius.circular(3),
+                      borderRadius: BorderRadius.circular(20),
                     ),
                     filled: true,
                     fillColor: Color(0xFFDBE2E7),
@@ -233,14 +249,15 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                         EdgeInsetsDirectional.fromSTEB(20, 24, 0, 24),
                   ),
                   style: TextStyle(
-                    color: Color(0xFF000000),
+                    color: Color(0xFFDBE2E7),
                     fontSize: 16,
                     fontFamily: 'Poppins',
                   ),
                 ),
               ),
-              Align(
-                alignment: AlignmentDirectional(-0.85, 0),
+              Container(
+                alignment: Alignment.centerLeft,
+                padding: EdgeInsetsDirectional.fromSTEB(30, 0, 30, 0),
                 child: Text(
                   'phone number',
                   style: TextStyle(
@@ -250,66 +267,69 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                   ),
                 ),
               ),
+              SizedBox(
+                height: 15,
+              ),
               Row(
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   Expanded(
                     child: Align(
-                      alignment: AlignmentDirectional(0, 0),
+                      alignment: Alignment.center,
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(20, 0, 20, 0),
+                        padding: EdgeInsetsDirectional.fromSTEB(30, 0, 30, 0),
                         child: TextFormField(
                           controller: textController3,
                           obscureText: false,
                           decoration: InputDecoration(
-                            labelText: 'Lastname',
+                            labelText: 'phone',
                             labelStyle: TextStyle(
-                              color: Color(0xFF000000),
+                              color: Color(0xFF95A1AC),
                               fontSize: 16,
                               fontFamily: 'Poppins',
                             ),
-                            hintText: 'Your full name...',
+                            hintText: 'Your phone number',
                             hintStyle: TextStyle(
-                              color: Color(0xFF000000),
+                              color: Color(0xFF95A1AC),
                               fontSize: 16,
                               fontFamily: 'Poppins',
                             ),
                             enabledBorder: OutlineInputBorder(
                               borderSide: BorderSide(
-                                color: Color(0xFF0082FF),
+                                color: Color(0xFFDBE2E7),
                                 width: 2,
                               ),
-                              borderRadius: BorderRadius.circular(3),
+                              borderRadius: BorderRadius.circular(20),
                             ),
                             focusedBorder: OutlineInputBorder(
                               borderSide: BorderSide(
-                                color: Color(0xFF0082FF),
+                                color: Color(0xFF9e76b4),
                                 width: 2,
                               ),
-                              borderRadius: BorderRadius.circular(3),
+                              borderRadius: BorderRadius.circular(20),
                             ),
                             errorBorder: OutlineInputBorder(
                               borderSide: BorderSide(
-                                color: Color(0x00000000),
+                                color: Color(0xFFDBE2E7),
                                 width: 2,
                               ),
-                              borderRadius: BorderRadius.circular(3),
+                              borderRadius: BorderRadius.circular(20),
                             ),
                             focusedErrorBorder: OutlineInputBorder(
                               borderSide: BorderSide(
-                                color: Color(0x00000000),
+                                color: Color(0xFFDBE2E7),
                                 width: 2,
                               ),
-                              borderRadius: BorderRadius.circular(3),
+                              borderRadius: BorderRadius.circular(20),
                             ),
                             filled: true,
-                            fillColor: Color(0xFFDBE2E7)
-                                .withOpacity(0.5000000000000001),
+                            fillColor: Color(0xFFDBE2E7),
                             contentPadding:
                                 EdgeInsetsDirectional.fromSTEB(20, 24, 0, 24),
                           ),
                           style: TextStyle(
-                            color: Color(0xFF000000),
+                            //Color(0xFF9e76b4)
+                            color: Color(0xFFDBE2E7),
                             fontSize: 16,
                             fontFamily: 'Poppins',
                           ),
@@ -317,42 +337,41 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                       ),
                     ),
                   ),
-                  Align(
-                    alignment: AlignmentDirectional(0, 0.05),
-                    child: Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(0, 0, 10, 0),
+                 Container(
+                    alignment: Alignment.centerLeft,
+                      padding: EdgeInsetsDirectional.fromSTEB(0, 0, 30, 0),
                       child: TextButton(
                         onPressed: () async {},
                         child: Text(
                           'Verify',
                           style: TextStyle(
-                            color: Color(0xFF0082FF),
+                            color: Colors.white,
                             fontSize: 16,
                             fontFamily: 'Poppins',
                           ),
                         ),
                         style: TextButton.styleFrom(
-                          backgroundColor: Color(0x00000000),
+                          backgroundColor: Color(0xFF9e76b4),
                           shape: RoundedRectangleBorder(
                             side: BorderSide(
-                              color: Color(0xFF0082FF),
+                              color: Color(0xFF9e76b4),
                               width: 2,
                               style: BorderStyle.solid,
                             ),
-                            borderRadius: BorderRadius.circular(3),
+                            borderRadius: BorderRadius.circular(20),
                           ),
                           padding:
                               EdgeInsetsDirectional.fromSTEB(16, 12, 16, 12),
                         ),
                       ),
-                    ),
+
                   ),
                 ],
               ),
-              Align(
-                alignment: AlignmentDirectional(0, 0.05),
+              Container(
+                alignment: Alignment.center,
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0, 24, 0, 0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
                   child: TextButton(
                     onPressed: () async {
                       await Navigator.push(
@@ -363,17 +382,17 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                       );
                     },
                     child: Text(
-                      'Submit',
+                      ' Submit ',
                       style: TextStyle(
-                        color: Color(0xFF000000),
+                        color: Colors.white,
                         fontSize: 16,
                         fontFamily: 'Poppins',
                       ),
                     ),
                     style: TextButton.styleFrom(
-                      backgroundColor: Color(0xFF0082FF),
+                      backgroundColor: Color(0xFF9e76b4),
                       shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(3),
+                        borderRadius: BorderRadius.circular(20),
                       ),
                       padding: EdgeInsetsDirectional.fromSTEB(16, 12, 16, 12),
                     ),

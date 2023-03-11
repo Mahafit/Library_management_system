@@ -17,7 +17,7 @@ class _HistoryWidgetState extends State<HistoryWidget> {
       key: scaffoldKey,
       backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Color(0xFFA49CF1),
+        backgroundColor: Color(0xFF9e76b4),
         automaticallyImplyLeading: false,
         leading: InkWell(
           onTap: () async {
@@ -112,7 +112,7 @@ class _HistoryWidgetState extends State<HistoryWidget> {
                                           CrossAxisAlignment.start,
                                       children: [
                                         Text(
-                                          'Date Borrow: xx/xx/xxxx',
+                                          'Date Borrow: 17/02/2023',
                                           style: TextStyle(
                                             fontFamily: 'Poppins',
                                             color: Color.fromARGB(255, 0, 0, 0),
@@ -125,7 +125,7 @@ class _HistoryWidgetState extends State<HistoryWidget> {
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0, 5, 0, 0),
                                           child: Text(
-                                            'Date Return: xx/xx/xxxx',
+                                            'Date Return: 23/02/2023',
                                             style: TextStyle(
                                               fontFamily: 'Poppins',
                                               color:
@@ -187,7 +187,7 @@ class _HistoryWidgetState extends State<HistoryWidget> {
                                           CrossAxisAlignment.start,
                                       children: [
                                         Text(
-                                          'Date Borrow: xx/xx/xxxx',
+                                          'Date Borrow: 06/02/2023',
                                           style: TextStyle(
                                             fontFamily: 'Poppins',
                                             color: Color.fromARGB(255, 0, 0, 0),
@@ -200,7 +200,7 @@ class _HistoryWidgetState extends State<HistoryWidget> {
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0, 5, 0, 0),
                                           child: Text(
-                                            'Date Return: xx/xx/xxxx',
+                                            'Date Return: 13/02/2023',
                                             style: TextStyle(
                                               fontFamily: 'Poppins',
                                               color:
@@ -285,7 +285,7 @@ class _HistoryWidgetState extends State<HistoryWidget> {
                                           CrossAxisAlignment.start,
                                       children: [
                                         Text(
-                                          'Date Borrow: xx/xx/xxxx',
+                                          'Date Borrow: 18/01/2023',
                                           style: TextStyle(
                                             fontFamily: 'Poppins',
                                             color: Color.fromARGB(255, 0, 0, 0),
@@ -298,7 +298,7 @@ class _HistoryWidgetState extends State<HistoryWidget> {
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0, 5, 0, 0),
                                           child: Text(
-                                            'Date Return: xx/xx/xxxx',
+                                            'Date Return: 29/01/2023',
                                             style: TextStyle(
                                               fontFamily: 'Poppins',
                                               color:
@@ -360,7 +360,7 @@ class _HistoryWidgetState extends State<HistoryWidget> {
                                           CrossAxisAlignment.start,
                                       children: [
                                         Text(
-                                          'Date Borrow: xx/xx/xxxx',
+                                          'Date Borrow: 07/01/2023',
                                           style: TextStyle(
                                             fontFamily: 'Poppins',
                                             color: Color.fromARGB(255, 0, 0, 0),
@@ -373,7 +373,7 @@ class _HistoryWidgetState extends State<HistoryWidget> {
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0, 5, 0, 0),
                                           child: Text(
-                                            'Date Return: xx/xx/xxxx',
+                                            'Date Return: 16/01/2023',
                                             style: TextStyle(
                                               fontFamily: 'Poppins',
                                               color:
