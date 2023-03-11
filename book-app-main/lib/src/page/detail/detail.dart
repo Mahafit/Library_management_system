@@ -101,7 +101,7 @@ class DetailPage extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    _buildButton(Icons.add, Color.fromARGB(255, 41, 26, 101)!,
+                    _buildButton(Icons.add, Color.fromARGB(255, 41, 26, 101),
                         'Add To Library'),
                     const SizedBox(
                       width: 15,
